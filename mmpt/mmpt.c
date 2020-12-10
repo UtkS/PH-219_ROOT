@@ -61,7 +61,7 @@ gpT->GetYaxis()->SetRangeUser(0.0,1.5);
 	c1->Update();
 auto legend = new TLegend(0.1,0.7,0.7,0.9);
    legend->SetHeader("Legend"); // option "C" allows to center the header
-   legend->AddEntry("gpT","<<<pT>> for corresponding multiplicity class","P");
+   legend->AddEntry("gpT","<<pT>> for corresponding multiplicity class","P");
    legend->SetTextSize(0.03);   
    legend->Draw();
 }
