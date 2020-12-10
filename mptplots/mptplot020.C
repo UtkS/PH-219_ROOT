@@ -4,7 +4,7 @@ void mptplot020()
         TTree *tree = (TTree*)f->Get("pytree020");
         Long64_t entries = (Long64_t)tree->GetEntries();
 
-        const Long64_t maxTrack=100000;
+        const Long64_t maxTrack=10000000;
     Int_t ntrack;
     Double_t pT[maxTrack];
     Double_t mpT=0.0;	    
