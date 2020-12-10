@@ -3,7 +3,7 @@ void mmpt()
 TFile *f=new TFile("13TeV_CR0_RHoff.root");
 char multiplicities[7][12] = {"pytree","pytree020","pytree2040","pytree4060","pytree6080","pytree80100","pytree100"};
 Double_t meanmpT[7] = {0.0,0.0,0.0,0.0,0.0,0.0,0.0};
-TCanvas *c1=new TCanvas("c1", "Mean mean pT", 200,10,700,50);
+TCanvas *c1=new TCanvas("c1", "<<pT>>", 200,10,700,50);
 c1->SetGrid();
 TGraph *gpT = new TGraph();
 
