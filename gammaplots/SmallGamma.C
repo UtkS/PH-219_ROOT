@@ -72,7 +72,7 @@ void SmallGamma(){
 		gpT->SetMarkerSize(1.6);
         gpT->SetTitle("Standardised skewness");
         gpT->GetXaxis()->SetTitle("Multiplicity");
-        gpT->GetYaxis()->SetTitle("gamma_pT");
+        gpT->GetYaxis()->SetTitle("#gamma_pT");
 
 		delete tree1;
 
@@ -83,8 +83,8 @@ void SmallGamma(){
 	gpT->Draw("AP");
 	c1->Update();
 	auto legend = new TLegend(0.1,0.7,0.48,0.9);
-   legend->SetHeader("Legend","C"); // option "C" allows to center the header
-   legend->AddEntry("gpT","1 observation of standardized skewness","P");
+   legend->SetHeader("Legend"); // option "C" allows to center the header
+   legend->AddEntry("gpT","standardized skewness per multiplicity class","P");
    legend->Draw();
 
 }
